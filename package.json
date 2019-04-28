@@ -1,0 +1,40 @@
+{
+  "name": "Movie-List-Mini-App",
+  "version": "1.0.0",
+  "description": "movie list mini app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "build": "webpack --watch --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjlagman12/movie-list-mini-app.git"
+  },
+  "author": "brian lagman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjlagman12/movie-list-mini-app/issues"
+  },
+  "homepage": "https://github.com/bjlagman12/movie-list-mini-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
