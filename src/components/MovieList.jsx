@@ -1,9 +1,9 @@
 import Movie from './Movie';
 import React from 'react';
 
-let MovieList = ({movies}) => (
+const MovieList = ({ movies }) => (
   <div>
-    {movies.map((movie, key) => <Movie movie={movie} key={key}/>)}
+    { movies ? (movies.map((movie, key) => <Movie movie={movie} key={key}/>)): 'Movie does not exist' }
   </div>
 );
 export default MovieList;

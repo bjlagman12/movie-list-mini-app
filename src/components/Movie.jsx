@@ -1,13 +1,17 @@
 import React from 'react';
 
 class Movie extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
+    this.state = {
+      toggle: false
+    };
   }
-  render(){
-    return(
+
+  render() {
+    return (
       <div>
-        {this.props.movie.title}
+        {this.props.movie.title }
       </div>
     );
   }
