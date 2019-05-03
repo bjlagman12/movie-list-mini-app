@@ -9,11 +9,13 @@ class App extends React.Component {
     this.state = {
       allMovies: this.props.movies,
       searchFor: '',
-      addMovie: ''
-    };
-
+      addMovie: '',
+      watched:[],
+      unWatched: [],
+    }
     this.submitSearch = this.submitSearch.bind(this);
     this.submitAdd = this.submitAdd.bind(this);
+    this.toggleMovie = this.toggleMovie.bind(this)
   }
 
   submitSearch(e) {
@@ -49,6 +51,10 @@ class App extends React.Component {
     console.log('add movie');
   }
 
+  toggleMovie(movie) {
+    console.log(movie)
+  }
+
   render() {
     return (
       <div>
@@ -60,7 +66,9 @@ class App extends React.Component {
           <input type="text" placeholder="Searching for......" onChange={(e)=> this.setState({ searchFor: e.target.value })} />
           <input type="submit" value="submit" />
         </form>
-        <MovieList movies={this.state.allMovies} />
+        <button>Watch</button>
+        <button>Watched</button>
+        <MovieList movies={this.state.allMovies} watch={this.state.watch} toggleMovie={this.toggleMovie}/>
       </div>
     );
   }
