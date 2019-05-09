@@ -3,3 +3,4 @@ bundle.js
 public/dist/bundle.js
 .vscode
 package-lock.json
+config.js
